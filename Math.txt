@@ -34,7 +34,7 @@ PHƯƠNG THỨC
     static double       atan2( double y, double x )
                         - Trả về góc theta từ việc chuyển đổi của tọa độ vuông góc (x,y) đến tọa độ điểm cực.
     static double       cbrt( double a )
-                        - Trả về căn bậc 3.
+                        - Trả về căn bậc ba của a.
     static double       ceil( double a )
                         - Trả về số được làm tròn lên số nguyên gần nhất.
     static double       copySign( double magnitude, double sign )
@@ -43,7 +43,7 @@ PHƯƠNG THỨC
                         - Trả về số chấm động thứ nhất với dấu của số chấm động thứ hai.
     static double       cos( double a )
                         - Trả về cos của một góc.
-    static double       cosh( double a )
+    static double       cosh( double x )
                         - Trả về hyperbol cos.
     static int          decrementExact( int a )
                         - Trả về đối số được giảm xuống 1, đưa ra một lỗi nếu kết quả ngoài phạm vi kiểu int.
@@ -106,12 +106,62 @@ PHƯƠNG THỨC
     static long         negateExact( long x )
                         - Trả về số đối, đưa ra một lỗi nếu kết quả ngoài phạm vi kiểu long.
     static double       nextAfter( double start, double direction )
-                        - Trả về số chấm động liền kề với đối số thứ nhất trong sự điều hướng của đối số thứ hai; nếu đối số thứ
-                        hai nhỏ hơn đối số thứ nhất, trả về số chấm động liền kề nhỏ hơn, nếu lớn hơn, trả về số chấm động liền kề
-                        lớn hơn, nếu bằng nhau, giá trị ban đầu được trả về.
+                        - Trả về số chấm động liền kề với đối số thứ nhất trong sự điều hướng của đối số thứ hai; nếu đối số thứ hai
+                        nhỏ hơn đối số thứ nhất, trả về số chấm động liền kề nhỏ hơn, nếu đối số thứ hai lớn hơn đối số thứ nhất,
+                        trả về số chấm động liền kề lớn hơn, nếu bằng nhau, giá trị ban đầu được trả về.
     static float        nextAfter( float start, double direction )
-                        - Trả về số chấm động liền kề với đối số thứ nhất trong sự điều hướng của đối số thứ hai; nếu đối số thứ
-                        hai nhỏ hơn đối số thứ nhất, trả về số chấm động liền kề nhỏ hơn, nếu lớn hơn, trả về số chấm động liền kề
-                        lớn hơn, nếu bằng nhau, giá trị ban đầu được trả về.
-    static double       cos( double a )
-                        - Trả về .
+                        - Trả về số chấm động liền kề với đối số thứ nhất trong sự điều hướng của đối số thứ hai; nếu đối số thứ hai
+                        nhỏ hơn đối số thứ nhất, trả về số chấm động liền kề nhỏ hơn, nếu đối số thứ hai lớn hơn đối số thứ nhất,
+                        trả về số chấm động liền kề lớn hơn, nếu bằng nhau, giá trị ban đầu được trả về.
+    static double       nextDown( double d )
+                        - Trả về số chấm động nhỏ hơn liền kề với đối số.
+    static float        nextDown( float f )
+                        - Trả về số chấm động nhỏ hơn liền kề với đối số.
+    static double       nextUp( double d )
+                        - Trả về số chấm động lớn hơn liền kề với đối số.
+    static float        nextUp( float f )
+                        - Trả về số chấm động lớn hơn liền kề với đối số.
+    static double       pow( double a, double b )
+                        - Trả về a mũ b.
+    static double       random()
+                        - Trả về một số chấm động ngẫu nhiên, lớn hơn hoặc bằng 0.0 và nhỏ hơn 1.0.
+    static double       rint( double a )
+                        - Trả về số chấm động được làm tròn đến số nguyên gần nhất; hướng đến âm vô cực.
+    static long         round( double a )
+                        - Trả về số được làm tròn đến số nguyên gần nhất; hướng đến dương vô cực.
+    static int          round( float a )
+                        - Trả về số được làm tròn đến số nguyên gần nhất; hướng đến dương vô cực.
+    static double       scalb( double d, int scaleFactor )
+                        - Trả về f x 2^scaleFactor; nhân số chấm động với một hệ số tỉ lệ là số mũ của 2.
+    static float        scalb( float d, int scaleFactor )
+                        - Trả về f x 2^scaleFactor; nhân số chấm động với một hệ số tỉ lệ là số mũ của 2.
+    static double       signum( double d )
+                        - Trả về dấu của đối số; 0.0 nếu đối số bằng 0, 1.0 nếu đối số lớn hơn 0, -1.0 nếu đối số nhỏ hơn 0.
+    static double       sin( double a )
+                        - Trả về sin của một góc.
+    static double       sinh( double x )
+                        - Trả về hyperbol sin.
+    static double       sqrt( double a )
+                        - Trả về căn bậc hai của a.
+    static int          subtractExact( int x, int y )
+                        - Trả về hiệu của hai đối số, đưa ra một lỗi nếu kết quả ngoài phạm vi kiểu int.
+    static long         subtractExact( long x, long y )
+                        - Trả về hiệu của hai đối số, đưa ra một lỗi nếu kết quả ngoài phạm vi kiểu long.
+    static double       tan( double a )
+                        - Trả về tan của một góc.
+    static double       tanh( double x )
+                        - Trả về hyperbol tan.
+    static double       toDegrees( double angrad )
+                        - Chuyển một góc đo radian sang góc đo bằng độ.
+    static int          toIntExact( long value )
+                        - Trả về giá trị của đối số với kiểu int; đưa ra một lỗi nếu giá trị ngoài phạm vi kiểu int.
+    static double       toRadians( double angdeg )
+                        - Chuyển một góc đo bằng độ sang góc đo radian.
+    static double       ulp( double d )
+                        - Trả về độ lớn của số đơn vị ULP (đơn vị khoảng cách giữa 2 số chấm động liền kề, từ 1.0 đến 2.0
+                        khoảng cách là 0.00000011920929, các số tiếp theo cách nhau khoảng 0,0000001).
+    static float        ulp( float d )
+                        - Trả về độ lớn của số đơn vị ULP (đơn vị khoảng cách giữa 2 số chấm động liền kề, từ 1.0 đến 2.0
+                        khoảng cách là 0.00000011920929, các số tiếp theo cách nhau khoảng 0,0000001).
+//    static double       cos( double a )
+//                        - Trả về .
