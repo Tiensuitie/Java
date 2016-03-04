@@ -1,3 +1,84 @@
+
+
+Color
+________________________________________________________________________________________________________________
+java.lang.Object
+    | java.awt.Color
+________________________________________________________________________________________________________________
+public class Color extends Object implements Paint, Serializable
+    - Dùng để tạo màu sắc với không gian màu mặc định là sRGB hoặc với không gian màu tùy ý được xác định bởi lớp ColorSpace.
+    Mỗi màu có một giá trị alpha xác định độ trong suốt của màu sắc, là các giá trị float trong khoảng (0.0 - 1.0) hoặc (0 - 255).
+________________________________________________________________________________________________________________
+KHỞI TẠO
+    Color( float r, float g, float b )
+    - Tạo một màu sRGB đục với các giá trị màu đỏ, lục, lam được xác định trong phạm vi (0.0 - 1.0).
+    Color( float r, float g, float b, float a )
+    - Tạo một màu sRGB với các giá trị màu đỏ, lục, lam, và độ trong suốt được xác định trong phạm vi (0.0 - 1.0).
+    Color( int r, int g, int b )
+    - Tạo một màu sRGB đục với các giá trị màu đỏ, lục, lam được xác định trong phạm vi (0 - 255).
+    Color( int r, int g, int b, int a )
+    - Tạo một màu sRGB với các giá trị màu đỏ, lục, lam, và độ trong suốt được xác định trong phạm vi (0 - 255).
+________________________________________________________________________________________________________________
+THUỘC TÍNH
+    static Color        black
+                        - Màu đen.
+    static Color        BLACK
+                        - Màu đen.
+    static Color        blue
+                        - Màu xanh lam.
+    static Color        BLUE
+                        - Màu xanh lam.
+    static Color        cyan
+                        - Màu xanh lục nam.
+    static Color        CYAN
+                        - Màu xanh lục lam.
+    static Color        darkGray
+                        - Màu xám đậm.
+    static Color        DARK_GRAY
+                        - Màu xám đậm.
+    static Color        gray
+                        - Màu xám.
+    static Color        GRAY
+                        - Màu xám.
+    static Color        green
+                        - Màu xanh lục.
+    static Color        GREEN
+                        - Màu xanh lục.
+    static Color        lightGray
+                        - Màu xám nhạt.
+    static Color        LIGHT_GRAY
+                        - Màu xám nhạt.
+    static Color        magenta
+                        - Màu đỏ sậm.
+    static Color        MAGENTA
+                        - Màu đỏ sậm.
+    static Color        orange
+                        - Màu cam.
+    static Color        ORANGE
+                        - Màu cam.
+    static Color        pink
+                        - Màu hồng.
+    static Color        PINK
+                        - Màu hồng.
+    static Color        red
+                        - Màu đỏ.
+    static Color        RED
+                        - Màu đỏ.
+    static Color        white
+                        - Màu trắng.
+    static Color        WHITE
+                        - Màu trắng.
+    static Color        yellow
+                        - Màu vàng.
+    static Color        YELLOW
+                        - Màu vàng.
+________________________________________________________________________________________________________________
+PHƯƠNG THỨC
+
+
+================================================================================================================
+
+
 Math
 ________________________________________________________________________________________________________________
 java.lang.Object
@@ -5,6 +86,8 @@ java.lang.Object
 ________________________________________________________________________________________________________________
 public final class Math extends Object
     - Chứa các phương thức để thực hiện những hoạt động số học cơ bản như lũy thừa, căn bậc hai, lôgarít, và các hàm lượng giác.
+________________________________________________________________________________________________________________
+KHỞI TẠO
 ________________________________________________________________________________________________________________
 THUỘC TÍNH
     static double       E
@@ -165,3 +248,4 @@ PHƯƠNG THỨC
                         khoảng cách là 0.00000011920929, các số tiếp theo cách nhau khoảng 0,0000001).
 //    static double       cos( double a )
 //                        - Trả về .
+
