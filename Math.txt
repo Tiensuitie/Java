@@ -11,13 +11,13 @@ public class Color extends Object implements Paint, Serializable
 ________________________________________________________________________________________________________________
 KHỞI TẠO
     Color( float r, float g, float b )
-    - Tạo một màu sRGB đục với các giá trị màu đỏ, lục, lam được xác định trong phạm vi (0.0 - 1.0).
+        - Tạo một màu sRGB đục với các giá trị màu đỏ, lục, lam được xác định trong phạm vi (0.0 - 1.0).
     Color( float r, float g, float b, float a )
-    - Tạo một màu sRGB với các giá trị màu đỏ, lục, lam, và độ trong suốt được xác định trong phạm vi (0.0 - 1.0).
+        - Tạo một màu sRGB với các giá trị màu đỏ, lục, lam, và độ trong suốt được xác định trong phạm vi (0.0 - 1.0).
     Color( int r, int g, int b )
-    - Tạo một màu sRGB đục với các giá trị màu đỏ, lục, lam được xác định trong phạm vi (0 - 255).
+        - Tạo một màu sRGB đục với các giá trị màu đỏ, lục, lam được xác định trong phạm vi (0 - 255).
     Color( int r, int g, int b, int a )
-    - Tạo một màu sRGB với các giá trị màu đỏ, lục, lam, và độ trong suốt được xác định trong phạm vi (0 - 255).
+        - Tạo một màu sRGB với các giá trị màu đỏ, lục, lam, và độ trong suốt được xác định trong phạm vi (0 - 255).
 ________________________________________________________________________________________________________________
 THUỘC TÍNH
     static Color        black
