@@ -1,38 +1,43 @@
 Math
 ________________________________________________________________________________________________________________
 java.lang.Object
-    java.lang.Math
+        java.lang.Math
 ________________________________________________________________________________________________________________
 public final class Math extends Object
 - Chứa các phương thức để thực hiện những hoạt động số học cơ bản như lũy thừa, căn bậc hai, lôgarít, và các hàm lượng giác.
 ________________________________________________________________________________________________________________
 THUỘC TÍNH
-  static double     E                     Giá trị cơ bản của lôgarít.
-  static double     PI                    Giá trị của pi.
+    static double       E
+                        - Giá trị cơ bản của lôgarít.
+    static double       PI
+                        - Giá trị của pi.
 ________________________________________________________________________________________________________________
 PHƯƠNG THỨC
-  static double     abs(double a)
-                    Trả về giá trị tuyệt đối.
-  static float      abs(float a)
-                    Trả về giá trị tuyệt đối.
-  static int        abs(int a)
-                    Trả về giá trị tuyệt đối.
-  static long       abs(long a)
-                    Trả về giá trị tuyệt đối.
-  static double     acos(double a)
-                    Trả về arc cos của giá trị; giá trị trả về trong khoảng từ 0.0 đến pi.
-  static int        addExact(int x, int y)
-                    Trả về tổng các đối số của nó, đưa ra một lỗi nếu kết quả lớn hơn kiểu int.
-  static long       addExact(long x, long y)
-                    Trả về tổng các đối số của nó, đưa ra một lỗi nếu kết quả lớn hơn kiểu long.
-  static double     asin(double a)
-                    Trả về arc sin của giá trị; giá trị trả về trong khoảng từ -pi/2 đến pi/2.
-  static double     atan(double a)
-                    Trả về arc tan của giá trị; giá trị trả về trong khoảng từ -pi/2 đến pi/2.
-  static double     atan2(double y, double x)
-                    Trả về góc theta từ việc chuyển đổi của tọa độ vuông góc (x,y) đến tọa độ điểm cực.
-  static double     cbrt(double a)
-                    Trả về căn bậc 3.
-  static double     ceil(double a)
-                    Trả về số làm tròn lên số nguyên gần nhất.
-  static double     copySign(double magnitude, double sign)
+    static double       abs( double a )
+                        - Trả về giá trị tuyệt đối.
+    static float        abs( float a )
+                        - Trả về giá trị tuyệt đối.
+    static int          abs( int a )
+                        - Trả về giá trị tuyệt đối.
+    static long         abs( long a )
+                        - Trả về giá trị tuyệt đối.
+    static double       acos( double a )
+                        - Trả về arc cos của giá trị; giá trị trả về trong khoảng từ 0.0 đến pi.
+    static int          addExact( int x, int y )
+                        - Trả về tổng các đối số của nó, đưa ra một lỗi nếu kết quả lớn hơn kiểu int.
+    static long         addExact( long x, long y )
+                        - Trả về tổng các đối số của nó, đưa ra một lỗi nếu kết quả lớn hơn kiểu long.
+    static double       asin( double a )
+                        - Trả về arc sin của giá trị; giá trị trả về trong khoảng từ -pi/2 đến pi/2.
+    static double       atan( double a )
+                        - Trả về arc tan của giá trị; giá trị trả về trong khoảng từ -pi/2 đến pi/2.
+    static double       atan2( double y, double x )
+                        - Trả về góc theta từ việc chuyển đổi của tọa độ vuông góc (x,y) đến tọa độ điểm cực.
+    static double       cbrt( double a )
+                        - Trả về căn bậc 3.
+    static double       ceil( double a )
+                        - Trả về số làm tròn lên số nguyên gần nhất.
+    static double       copySign( double magnitude, double sign )
+                        - Trả về số chấm động thứ nhất với dấu của số chấm động thứ hai.
+    static float        copySign( float magnitude, float sign )
+                        - Trả về số chấm động thứ nhất với dấu của số chấm động thứ hai.
