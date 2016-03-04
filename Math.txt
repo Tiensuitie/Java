@@ -1,8 +1,8 @@
 Math
 ________________________________________________________________________________________________________________
 java.lang.Object
-    | java.lang.Math
-        | java.lang.StrictMath
+  | java.lang.Math
+      | java.lang.StrictMath
 ________________________________________________________________________________________________________________
 public final class Math extends Object
     - Chứa các phương thức để thực hiện những hoạt động số học cơ bản như lũy thừa, căn bậc hai, lôgarít, và các hàm lượng giác.
