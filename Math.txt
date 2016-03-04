@@ -7,9 +7,9 @@ public final class Math extends Object
 - Chứa các phương thức để thực hiện những hoạt động số học cơ bản như lũy thừa, căn bậc hai, lôgarít, và các hàm lượng giác.
 ________________________________________________________________________________________________________________
 THUỘC TÍNH
-    static double     E                     Giá trị cơ bản của lôgarít.
-    static double     PI                    Giá trị của pi.
+  static double     E                     Giá trị cơ bản của lôgarít.
+  static double     PI                    Giá trị của pi.
 ________________________________________________________________________________________________________________
 PHƯƠNG THỨC
-    static double     abs(double a)         Trả về giá trị tuyệt đối kiểu double.
-    static
+  static double     abs(double a)         Trả về giá trị tuyệt đối kiểu double.
+  static
