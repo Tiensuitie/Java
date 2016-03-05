@@ -27,57 +27,57 @@ HÀM TẠO
 ________________________________________________________________________________________________________________
 TRƯỜNG
     static Color        black
-                        - Màu đen.
+                        - Màu đen. Trong không gian sRGB mặc định.
     static Color        BLACK
-                        - Màu đen.
+                        - Màu đen. Trong không gian sRGB mặc định.
     static Color        blue
-                        - Màu xanh lam.
+                        - Màu xanh lam. Trong không gian sRGB mặc định.
     static Color        BLUE
-                        - Màu xanh lam.
+                        - Màu xanh lam. Trong không gian sRGB mặc định.
     static Color        cyan
-                        - Màu xanh lục nam.
+                        - Màu xanh lục nam. Trong không gian sRGB mặc định.
     static Color        CYAN
-                        - Màu xanh lục lam.
+                        - Màu xanh lục lam. Trong không gian sRGB mặc định.
     static Color        darkGray
-                        - Màu xám đậm.
+                        - Màu xám đậm. Trong không gian sRGB mặc định.
     static Color        DARK_GRAY
-                        - Màu xám đậm.
+                        - Màu xám đậm. Trong không gian sRGB mặc định.
     static Color        gray
-                        - Màu xám.
+                        - Màu xám. Trong không gian sRGB mặc định.
     static Color        GRAY
-                        - Màu xám.
+                        - Màu xám. Trong không gian sRGB mặc định.
     static Color        green
-                        - Màu xanh lục.
+                        - Màu xanh lục. Trong không gian sRGB mặc định.
     static Color        GREEN
-                        - Màu xanh lục.
+                        - Màu xanh lục. Trong không gian sRGB mặc định.
     static Color        lightGray
-                        - Màu xám nhạt.
+                        - Màu xám nhạt. Trong không gian sRGB mặc định.
     static Color        LIGHT_GRAY
-                        - Màu xám nhạt.
+                        - Màu xám nhạt. Trong không gian sRGB mặc định.
     static Color        magenta
-                        - Màu đỏ sậm.
+                        - Màu đỏ sậm. Trong không gian sRGB mặc định.
     static Color        MAGENTA
-                        - Màu đỏ sậm.
+                        - Màu đỏ sậm. Trong không gian sRGB mặc định.
     static Color        orange
-                        - Màu cam.
+                        - Màu cam. Trong không gian sRGB mặc định.
     static Color        ORANGE
-                        - Màu cam.
+                        - Màu cam. Trong không gian sRGB mặc định.
     static Color        pink
-                        - Màu hồng.
+                        - Màu hồng. Trong không gian sRGB mặc định.
     static Color        PINK
-                        - Màu hồng.
+                        - Màu hồng. Trong không gian sRGB mặc định.
     static Color        red
-                        - Màu đỏ.
+                        - Màu đỏ. Trong không gian sRGB mặc định.
     static Color        RED
-                        - Màu đỏ.
+                        - Màu đỏ. Trong không gian sRGB mặc định.
     static Color        white
-                        - Màu trắng.
+                        - Màu trắng. Trong không gian sRGB mặc định.
     static Color        WHITE
-                        - Màu trắng.
+                        - Màu trắng. Trong không gian sRGB mặc định.
     static Color        yellow
-                        - Màu vàng.
+                        - Màu vàng. Trong không gian sRGB mặc định.
     static Color        YELLOW
-                        - Màu vàng.
+                        - Màu vàng. Trong không gian sRGB mặc định.
 ________________________________________________________________________________________________________________
 PHƯƠNG THỨC
     Color               brighter()
@@ -132,9 +132,26 @@ PHƯƠNG THỨC
                         - Trả về một mảng float chỉ chứa các thành phần màu của Color, trong không gian màu mặc định sRGB; nếu
                         compArray là null, một mảng với chiều dài là 3 được tạo ra và trả về, còn không, compArray phải đạt chiều dài
                         ít nhất là 3 hoặc lớn hơn, và nó được nấp đầy các thành phần và trả về.
+    float[]             getRGBComponents( float[] compArray )
+                        - Trả về một mảng float chứa các thành phần màu và độ trong suốt của Color, trong không gian màu mặc định
+                        sRGB; nếu compArray là null, một mảng với chiều dài là 4 được tạo ra và trả về, còn không, compArray phải đạt
+                        chiều dài ít nhất là 4 hoặc lớn hơn, và nó được nấp đầy các thành phần và trả về.
+    int                 getTransparency()
+                        - Trả về độ trong suốt của Color.
+    int                 hashCode()
+                        - Tính mã băm của Color này.
+    static int          HSBtoRGB( float hue, float saturation, float brightness )
+                        - Chuyển đổi các thành phần của một màu theo mô hình HSB, sang các giá trị tương đương với mô hình RGB mặc
+                        định.
+    static float[]      RGBtoHSB( int r, int g, int b, float[] hsbvals )
+                        - Chuyển đổi các thành phần của một màu theo mô hình RGB mặc định, sang các giá trị tương đương bao gồm màu
+                        sắc, độ bão hòa, độ sáng, và đó là ba thành phần của mô hình HSB; nếu đối số hsbvals là null, một mảng mới
+                        được trả về, còn không, trả về mảng hsbvals với các giá trị được đưa vào mảng đó.
+    String              toString()
+                        - Trả về một chuỗi đại diện cho Color này.
 //
     static Color        cos( double a )
-                        - Trả.
+                        - Trả .
 
 
 ================================================================================================================
