@@ -25,7 +25,7 @@ KHỞI TẠO
     Color( int r, int g, int b, int a )
     - Tạo một màu sRGB với các giá trị màu đỏ, lục, lam, và độ trong suốt được xác định trong phạm vi (0 - 255).
 ________________________________________________________________________________________________________________
-THUỘC TÍNH
+TRƯỜNG
     static Color        black
                         - Màu đen.
     static Color        BLACK
@@ -95,7 +95,7 @@ public final class Math extends Object
 ________________________________________________________________________________________________________________
 KHỞI TẠO
 ________________________________________________________________________________________________________________
-THUỘC TÍNH
+TRƯỜNG
     static double       E
                         - Giá trị cơ bản của lôgarít.
     static double       PI
