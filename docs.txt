@@ -218,11 +218,11 @@ PHƯƠNG THỨC
                         - Trả về số được làm tròn xuống số nguyên gần nhất.
     static int          floorDiv( int x, int y )
                         - Trả về số được làm tròn xuống số nguyên gần nhất của thương số hai đối số.
-    static long          floorDiv( long x, long y )
+    static long         floorDiv( long x, long y )
                         - Trả về số được làm tròn xuống số nguyên gần nhất của thương số hai đối số.
     static int          floorMod( int x, int y )
                         - Trả về số được làm tròn xuống số nguyên gần nhất của phép chia dư hai đối số.
-    static long          floorMod( long x, long y )
+    static long         floorMod( long x, long y )
                         - Trả về số được làm tròn xuống số nguyên gần nhất của phép chia dư hai đối số.
     static int          getExponent( double d )
                         - 
@@ -234,14 +234,14 @@ PHƯƠNG THỨC
                         - 
     static int          incrementExact( int a )
                         - Trả về đối số được tăng lên 1, đưa ra một lỗi nếu kết quả ngoài phạm vi kiểu int.
-    static long          incrementExact( long a )
+    static long         incrementExact( long a )
                         - Trả về đối số được tăng lên 1, đưa ra một lỗi nếu kết quả ngoài phạm vi kiểu long.
     static double       log( double a )
                         - Trả về lôgarít tự nhiên (cơ số e).
     static double       log10( double a )
                         - Trả về lôgarít cơ số 10.
     static double       log1p( double x )
-                        - Trả về lôgarít tự nhiên của tổng của đối số và 1.
+                        - Trả về lôgarít tự nhiên của x và cộng 1.
     static double       max( double a, double b )
                         - Trả về giá trị lớn hơn của hai đối số.
     static float        max( float a, float b )
@@ -320,10 +320,10 @@ PHƯƠNG THỨC
                         - Chuyển một góc đo bằng độ sang góc đo radian.
     static double       ulp( double d )
                         - Trả về độ lớn của số đơn vị ULP (đơn vị khoảng cách giữa 2 số chấm động liền kề, từ 1.0 đến 2.0
-                        khoảng cách là 0.00000011920929, các số tiếp theo cách nhau khoảng 0,0000001).
+                        khoảng cách là 0.00000011920929, các số tiếp theo cách nhau khoảng 0.0000001).
     static float        ulp( float d )
                         - Trả về độ lớn của số đơn vị ULP (đơn vị khoảng cách giữa 2 số chấm động liền kề, từ 1.0 đến 2.0
-                        khoảng cách là 0.00000011920929, các số tiếp theo cách nhau khoảng 0,0000001).
+                        khoảng cách là 0.00000011920929, các số tiếp theo cách nhau khoảng 0.0000001).
 //
     static double       cos( double a )
                         - Trả về .
