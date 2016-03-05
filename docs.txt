@@ -80,6 +80,61 @@ TRƯỜNG
                         - Màu vàng.
 ________________________________________________________________________________________________________________
 PHƯƠNG THỨC
+    Color               brighter()
+                        - Tạo một đối tượng Color mới với phiên bản sáng hơn đối tượng Color hiện tại.
+    PaintContext        createContext( ColorModel cm, Rectangle r, Rectangle2D r2d, AffineTransform xform, RenderingHints hints )
+                        - 
+    Color               darker()
+                        - Tạo một đối tượng Color mới với phiên bản tối hơn đối tượng Color hiện tại.
+    static Color        decode( String nm )
+                        - Chuyển đổi một chuỗi thành một số nguyên và trả về đối tượng Color mới với màu đục.
+    boolean             equals( Object obj )
+                        - Xác định đối tượng khác bằng với đối tượng Color này.
+    int                 getAlpha()
+                        - Trả về thành phần trong suốt trong khoảng 0 - 255.
+    int                 getBlue()
+                        - Trả về thành phần màu lam trong khoảng 0 - 255 trong không gian màu mặc định sRGB.
+    static Color        getColor( String nm )
+                        - Tìm một màu trong các thuộc tính hệ thống và trả về đối tượng Color mới.
+    static Color        getColor( String nm, Color v )
+                        - Tìm một màu trong các thuộc tính hệ thống, nếu chuỗi tên thuộc tính không tìm thấy hoặc không thể phân tích
+                        ra một số, đối số thứ hai được trả về thay thế.
+    static Color        getColor( String nm, int v )
+                        - Tìm một màu trong các thuộc tính hệ thống, nếu chuỗi tên thuộc tính không tìm thấy hoặc không thể phân tích
+                        ra một số, đối số thứ hai được sử dụng, và chuyển đổi thành một đối tượng Color mới.
+    float[]             getColorComponents( ColorSpace cspace, float[] compArray )
+                        - Trả về một mảng float chỉ chứa các thành phần màu của Color trong không gian màu xác định; nếu compArray là
+                        null, một mảng với chiều dài bằng với số lượng thành phần trong cspace được tạo ra và trả về, còn không,
+                        compArray phải đạt ít nhất chiều dài này, và nó được nấp đầy các thành phần và trả về.
+    float[]             getColorComponents( float[] compArray )
+                        - Trả về một mảng float chỉ chứa các thành phần màu của Color, trong không gian màu của Color; nếu compArray
+                        là null, một mảng với chiều dài bằng với số lượng thành phần trong ColorSpace được tạo ra và trả về, còn
+                        không, compArray phải đạt ít nhất chiều dài này, và nó được nấp đầy các thành phần và trả về.
+    ColorSpace          getColorSpace()
+                        - Trả về ColorSpace trong Color này.
+    float[]             getComponents( ColorSpace cspace, float[] compArray )
+                        - Trả về một mảng float chứa các thành phần màu và độ trong suốt của Color trong không gian màu xác định; nếu
+                        compArray là null, một mảng với chiều dài bằng với số lượng thành phần trong cspace được tạo ra và trả về,
+                        còn không, compArray phải đạt ít nhất chiều dài này, và nó được nấp đầy các thành phần và trả về.
+    float[]             getComponents( float[] compArray )
+                        - Trả về một mảng float chứa các thành phần màu và độ trong suốt của Color, trong không gian màu của Color;
+                        nếu compArray là null, một mảng với chiều dài bằng với số lượng thành phần trong ColorSpace được tạo ra và
+                        trả về, còn không, compArray phải đạt ít nhất chiều dài này, và nó được nấp đầy các thành phần và trả về.
+    int                 getGreen()
+                        - Trả về thành phần màu lục trong khoảng 0 - 255 trong không gian màu mặc định sRGB.
+    static Color        getHSBColor( float h, float s, float b, )
+                        - Tạo một đối tượng Color dựa trên các giá trị quy định cho các mô hình màu HSB.
+    int                 getRed()
+                        - Trả về thành phần màu đỏ trong khoảng 0 - 255 trong không gian màu mặc định sRGB.
+    int                 getRGB()
+                        - Trả về giá trị RGB đại diện cho màu sắc trong lớp ColorModel mặc định sRGB.
+    float[]             getRGBColorComponents( float[] compArray )
+                        - Trả về một mảng float chỉ chứa các thành phần màu của Color, trong không gian màu mặc định sRGB; nếu
+                        compArray là null, một mảng với chiều dài là 3 được tạo ra và trả về, còn không, compArray phải đạt chiều dài
+                        ít nhất là 3 hoặc lớn hơn, và nó được nấp đầy các thành phần và trả về.
+//
+    static Color        cos( double a )
+                        - Trả.
 
 
 ================================================================================================================
@@ -252,6 +307,7 @@ PHƯƠNG THỨC
     static float        ulp( float d )
                         - Trả về độ lớn của số đơn vị ULP (đơn vị khoảng cách giữa 2 số chấm động liền kề, từ 1.0 đến 2.0
                         khoảng cách là 0.00000011920929, các số tiếp theo cách nhau khoảng 0,0000001).
-//    static double       cos( double a )
-//                        - Trả về .
+//
+    static double       cos( double a )
+                        - Trả về .
 
