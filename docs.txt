@@ -229,7 +229,7 @@ PHƯƠNG THỨC
     static int          getExponent( float f )
                         - 
     static double       hypot( double x, double y )
-                        - Trả về sqrt( x^2 + y^2 ).
+                        - Trả về độ dài cạnh huyền của 2 cạnh góc vuông; sqrt( x^2 + y^2 ).
     static double       IEEEremainder( double f1, double f2 )
                         - 
     static int          incrementExact( int a )
