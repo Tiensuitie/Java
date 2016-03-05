@@ -10,10 +10,16 @@ public class Color extends Object implements Paint, Serializable
     Mỗi màu có một giá trị alpha xác định độ trong suốt của màu sắc, là các giá trị float trong khoảng (0.0 - 1.0) hoặc (0 - 255).
 ________________________________________________________________________________________________________________
 KHỞI TẠO
+    Color( ColorSpace cspace, float[] components, float alpha )
+    - Tạo một màu trong không gian màu chỉ định với thành phần màu sắc quy định trong mảng float và độ trong suốt.
     Color( float r, float g, float b )
     - Tạo một màu sRGB đục với các giá trị màu đỏ, lục, lam được xác định trong phạm vi (0.0 - 1.0).
     Color( float r, float g, float b, float a )
     - Tạo một màu sRGB với các giá trị màu đỏ, lục, lam, và độ trong suốt được xác định trong phạm vi (0.0 - 1.0).
+    Color( int rgb )
+    - Tạo một màu sRGB đục với giá trị RGB kết hợp được xác định trong khoảng (0 - 16777216).
+    Color( int rgba, boolean hasalpha )
+    - Tạo một màu sRGB với giá trị RGBA kết hợp được xác định trong khoảng (0 - 4294967296).
     Color( int r, int g, int b )
     - Tạo một màu sRGB đục với các giá trị màu đỏ, lục, lam được xác định trong phạm vi (0 - 255).
     Color( int r, int g, int b, int a )
