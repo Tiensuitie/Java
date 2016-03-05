@@ -9,7 +9,7 @@ public class Color extends Object implements Paint, Serializable
     - Dùng để tạo màu sắc với không gian màu mặc định là sRGB hoặc với không gian màu tùy ý được xác định bởi lớp ColorSpace.
     Mỗi màu có một giá trị alpha xác định độ trong suốt của màu sắc, là các giá trị float trong khoảng (0.0 - 1.0) hoặc (0 - 255).
 ________________________________________________________________________________________________________________
-KHỞI TẠO
+HÀM TẠO
     Color( ColorSpace cspace, float[] components, float alpha )
     - Tạo một màu trong không gian màu chỉ định với thành phần màu sắc quy định trong mảng float và độ trong suốt.
     Color( float r, float g, float b )
@@ -93,7 +93,7 @@ ________________________________________________________________________________
 public final class Math extends Object
     - Chứa các phương thức để thực hiện những hoạt động số học cơ bản như lũy thừa, căn bậc hai, lôgarít, và các hàm lượng giác.
 ________________________________________________________________________________________________________________
-KHỞI TẠO
+HÀM TẠO
 ________________________________________________________________________________________________________________
 TRƯỜNG
     static double       E
