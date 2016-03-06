@@ -149,8 +149,65 @@ PHƯƠNG THỨC
                         được trả về, còn không, trả về mảng hsbvals với các giá trị được đưa vào mảng đó.
     String              toString()
                         - Trả về một chuỗi đại diện cho Color này.
+
+
+=====================================================================================================================================
+
+
+JTextArea
+_____________________________________________________________________________________________________________________________________
+java.lang.Object
+    | java.awt.Component
+        | java.awt.Container
+            | javax.swing.JComponent
+                | javax.swing.text.JTextComponent
+                    | javax.swing.JTextArea
+_____________________________________________________________________________________________________________________________________
+public class JTextArea extends JTextComponent
+    - Là một vùng hiển thị văn bản đa dòng. JTextArea khác java.awt.TextArea ở chỗ JTextArea không quản lý việc cuộn văn bản bên trong, nhưng nó được bổ sung giao diện swing Scrollable. Điều này cho phép nó có thể được đặt bên trong một ScrollPane nếu muốn cuộn văn bản.
+    - Các java.awt.TextArea có khả năng ngắt dòng. Còn JTextArea thì mặc định sẽ không ngắt dòng, nhưng ta có thể thay đổi thuộc tính của JTextArea để điều khiển việc ngắt dòng hay không ngắt dòng. Theo mặc định, thuộc tính này được đặt là false (không ngắt dòng).
+    - java.awt.TextArea có hai thuộc tính hàng và cột xác định kích thước ưa thích. JTextArea sử dụng các thuộc tính để chỉ ra kích thước ưa thích của khung hiển thị khi được đặt bên trong một JScrollPane.
+_____________________________________________________________________________________________________________________________________
+HÀM TẠO
+    JTextArea()
+    - Tạo một TextArea mới
+    JTextArea( Document doc )
+    - Tạo một JTextArea mới với mô hình tài liệu được đưa ra, và mặc định cho tất cả các đối số (null, 0, 0).
+    JTextArea( Document doc, String text, int rows, int columns )
+    - Tạo một JTextArea mới với số hàng và cột xác định, và các mô hình đã cho.
+    JTextArea( int rows, int columns )
+    - Tạo một TextArea trống mới với số hàng và cột xác định.
+    JTextArea( String text )
+    - Tạo một TextArea mới với các văn bản xác định được hiển thị.
+    JTextArea( String text, int rows, int columns )
+    - Tạo một TextArea mới với các văn bản và số hàng, số cột xác định.
+_____________________________________________________________________________________________________________________________________
+TRƯỜNG
+- Thừa kế từ lớp javax.swing.text.JTextComponent
+    DEFAULT_KEYMAP, FOCUS_ACCELERATOR_KEY
+- Thừa kế từ lớp javax.swing.JComponent
+    listenerList, TOOL_TIP_TEXT_KEY, ui, UNDEFINED_CONDITION, WHEN_ANCESTOR_OF_FOCUSED_COMPONENT, WHEN_FOCUSED,
+    WHEN_IN_FOCUSED_WINDOW
+- Thừa kế từ lớp java.awt.Component
+    accessibleContext, BOTTOM_ALIGNMENT, CENTER_ALIGNMENT, LEFT_ALIGNMENT, RIGHT_ALIGNMENT, TOP_ALIGNMENT
+- Thừa kế từ lớp java.awt.image.ImageObserver
+    ABORT, ALLBITS, ERROR, FRAMEBITS, HEIGHT, PROPERTIES, SOMEBITS, WIDTH
+_____________________________________________________________________________________________________________________________________
+PHƯƠNG THỨC
+    void                append( String str )
+                        - Nối thêm các văn bản đã cho vào cuối tài liệu.
+    protected Document  createDefaultModel()
+                        - 
+    AccessibleContext   getAccessibleContext()
+                        - 
+    int                 getColumns()
+                        - Trả về số cột của TextArea.
+    protected int       getColumnWidth()
+                        - Trả về độ dài của cột trong TextArea.
+    int                 getLineCount()
+                        - Xác định số dòng chứa trong TextArea.
 //
-    static Color        cos( double a )
+    static String       cos( double a )
                         - Trả .
 
 
@@ -324,7 +381,4 @@ PHƯƠNG THỨC
     static float        ulp( float d )
                         - Trả về độ lớn của số đơn vị ULP (đơn vị khoảng cách giữa 2 số chấm động liền kề, từ 1.0 đến 2.0
                         khoảng cách là 0.00000011920929, các số tiếp theo cách nhau khoảng 0.0000001).
-//
-    static double       cos( double a )
-                        - Trả về .
 
