@@ -5,7 +5,9 @@ ________________________________________________________________________________
 java.lang.Object
     | java.awt.Color
 _____________________________________________________________________________________________________________________________________
-public class Color extends Object implements Paint, Transparency, Serializable
+public class Color
+extends Object
+implements Paint, Transparency, Serializable
     - Dùng để tạo màu sắc với không gian màu mặc định là sRGB hoặc với không gian màu tùy ý được xác định bởi lớp ColorSpace.
     Mỗi màu có một giá trị alpha xác định độ trong suốt của màu sắc, là các giá trị float trong khoảng (0.0 - 1.0) hoặc (0 - 255).
 _____________________________________________________________________________________________________________________________________
@@ -163,7 +165,8 @@ java.lang.Object
                 | javax.swing.text.JTextComponent
                     | javax.swing.JTextArea
 _____________________________________________________________________________________________________________________________________
-public class JTextArea extends JTextComponent
+public class JTextArea
+extends JTextComponent
     - Là một vùng hiển thị văn bản đa dòng. JTextArea khác java.awt.TextArea ở chỗ JTextArea không quản lý việc cuộn văn bản bên
     trong, nhưng nó được bổ sung giao diện swing Scrollable. Điều này cho phép nó có thể được đặt bên trong một ScrollPane nếu muốn
     cuộn văn bản.
@@ -224,7 +227,8 @@ ________________________________________________________________________________
 java.lang.Object
     | java.lang.Math
 _____________________________________________________________________________________________________________________________________
-public final class Math extends Object
+public final class Math
+extends Object
     - Chứa các phương thức để thực hiện những hoạt động số học cơ bản như lũy thừa, căn bậc hai, lôgarít, và các hàm lượng giác.
 _____________________________________________________________________________________________________________________________________
 HÀM TẠO
