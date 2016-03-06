@@ -164,9 +164,14 @@ java.lang.Object
                     | javax.swing.JTextArea
 _____________________________________________________________________________________________________________________________________
 public class JTextArea extends JTextComponent
-    - Là một vùng hiển thị văn bản đa dòng. JTextArea khác java.awt.TextArea ở chỗ JTextArea không quản lý việc cuộn văn bản bên trong, nhưng nó được bổ sung giao diện swing Scrollable. Điều này cho phép nó có thể được đặt bên trong một ScrollPane nếu muốn cuộn văn bản.
-    - Các java.awt.TextArea có khả năng ngắt dòng. Còn JTextArea thì mặc định sẽ không ngắt dòng, nhưng ta có thể thay đổi thuộc tính của JTextArea để điều khiển việc ngắt dòng hay không ngắt dòng. Theo mặc định, thuộc tính này được đặt là false (không ngắt dòng).
-    - java.awt.TextArea có hai thuộc tính hàng và cột xác định kích thước ưa thích. JTextArea sử dụng các thuộc tính để chỉ ra kích thước ưa thích của khung hiển thị khi được đặt bên trong một JScrollPane.
+    - Là một vùng hiển thị văn bản đa dòng. JTextArea khác java.awt.TextArea ở chỗ JTextArea không quản lý việc cuộn văn bản bên
+    trong, nhưng nó được bổ sung giao diện swing Scrollable. Điều này cho phép nó có thể được đặt bên trong một ScrollPane nếu muốn
+    cuộn văn bản.
+    - Các java.awt.TextArea có khả năng ngắt dòng. Còn JTextArea thì mặc định sẽ không ngắt dòng, nhưng ta có thể thay đổi thuộc tính
+    của JTextArea để điều khiển việc ngắt dòng hay không ngắt dòng. Theo mặc định, thuộc tính này được đặt là false (không ngắt
+    dòng).
+    - java.awt.TextArea có hai thuộc tính hàng và cột xác định kích thước ưa thích. JTextArea sử dụng các thuộc tính để chỉ ra kích
+    thước ưa thích của khung hiển thị khi được đặt bên trong một JScrollPane.
 _____________________________________________________________________________________________________________________________________
 HÀM TẠO
     JTextArea()
