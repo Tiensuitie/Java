@@ -188,14 +188,14 @@ HÀM TẠO
     - Tạo một TextArea mới với các văn bản và số hàng, số cột xác định.
 _____________________________________________________________________________________________________________________________________
 TRƯỜNG
-Thừa kế từ lớp javax.swing.text.JTextComponent
+ Thừa kế từ lớp javax.swing.text.JTextComponent
     DEFAULT_KEYMAP, FOCUS_ACCELERATOR_KEY
-Thừa kế từ lớp javax.swing.JComponent
+ Thừa kế từ lớp javax.swing.JComponent
     listenerList, TOOL_TIP_TEXT_KEY, ui, UNDEFINED_CONDITION, WHEN_ANCESTOR_OF_FOCUSED_COMPONENT, WHEN_FOCUSED,
     WHEN_IN_FOCUSED_WINDOW
-Thừa kế từ lớp java.awt.Component
+ Thừa kế từ lớp java.awt.Component
     accessibleContext, BOTTOM_ALIGNMENT, CENTER_ALIGNMENT, LEFT_ALIGNMENT, RIGHT_ALIGNMENT, TOP_ALIGNMENT
-Thừa kế từ lớp java.awt.image.ImageObserver
+ Thừa kế từ lớp java.awt.image.ImageObserver
     ABORT, ALLBITS, ERROR, FRAMEBITS, HEIGHT, PROPERTIES, SOMEBITS, WIDTH
 _____________________________________________________________________________________________________________________________________
 PHƯƠNG THỨC
