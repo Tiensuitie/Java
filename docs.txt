@@ -8,7 +8,7 @@ ________________________________________________________________________________
 public class Arrays
 extends Object
     - Lớp này chứa các phương thức khác nhau để thao tác với mảng (như sắp xếp và tìm kiếm).
-    - Các phương thức trong lớp này đưa ra một NullPointerException, nếu một mảng được xác định là null, trừ khi có ghi chú.
+    - Các phương thức trong lớp này đều đưa ra một NullPointerException, nếu một mảng được xác định là null, trừ khi có ghi chú.
 _____________________________________________________________________________________________________________________________________
 HÀM TẠO
 _____________________________________________________________________________________________________________________________________
