@@ -1,5 +1,81 @@
 
 
+Arrays
+_____________________________________________________________________________________________________________________________________
+java.lang.Object
+    | java.util.Arrays
+_____________________________________________________________________________________________________________________________________
+public class Arrays
+extends Object
+    - Lớp này chứa các phương thức khác nhau để thao tác với mảng (như sắp xếp và tìm kiếm).
+    - Các phương thức trong lớp này đưa ra một NullPointerException, nếu một mảng được xác định là null, trừ khi có ghi chú.
+_____________________________________________________________________________________________________________________________________
+HÀM TẠO
+_____________________________________________________________________________________________________________________________________
+TRƯỜNG
+_____________________________________________________________________________________________________________________________________
+PHƯƠNG THỨC
+    static <T> List<T>              asList(T... a)
+                                    - 
+    static int                      binarySearch( byte[] a, byte key )
+                                    - Tìm kiếm giá trị xác định trong mảng byte sử dụng thuật toán tìm kiếm nhị phân; trả về vị trí
+                                    tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( byte[] a, int fromIndex, int toIndex, byte key )
+                                    - Tìm kiếm giá trị xác định trong phạm vi được chỉ định của mảng byte sử dụng thuật toán tìm kiếm
+                                    nhị phân; trả về vị trí tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( char[] a, char key )
+                                    - Tìm kiếm giá trị xác định trong mảng char sử dụng thuật toán tìm kiếm nhị phân; trả về vị trí
+                                    tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( char[] a, int fromIndex, int toIndex, char key )
+                                    - Tìm kiếm giá trị xác định trong phạm vi được chỉ định của mảng char sử dụng thuật toán tìm kiếm
+                                    nhị phân; trả về vị trí tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( double[] a, double key )
+                                    - Tìm kiếm giá trị xác định trong mảng double sử dụng thuật toán tìm kiếm nhị phân; trả về vị trí
+                                    tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( double[] a, int fromIndex, int toIndex, double key )
+                                    - Tìm kiếm giá trị xác định trong phạm vi được chỉ định của mảng double sử dụng thuật toán tìm
+                                    kiếm nhị phân; trả về vị trí tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( float[] a, float key )
+                                    - Tìm kiếm giá trị xác định trong mảng float sử dụng thuật toán tìm kiếm nhị phân; trả về vị trí
+                                    tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( float[] a, int fromIndex, int toIndex, float key )
+                                    - Tìm kiếm giá trị xác định trong phạm vi được chỉ định của mảng float sử dụng thuật toán tìm
+                                    kiếm nhị phân; trả về vị trí tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( int[] a, int key )
+                                    - Tìm kiếm giá trị xác định trong mảng int sử dụng thuật toán tìm kiếm nhị phân; trả về vị trí
+                                    tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( int[] a, int fromIndex, int toIndex, int key )
+                                    - Tìm kiếm giá trị xác định trong phạm vi được chỉ định của mảng int sử dụng thuật toán tìm kiếm
+                                    nhị phân; trả về vị trí tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( long[] a, long key )
+                                    - Tìm kiếm giá trị xác định trong mảng long sử dụng thuật toán tìm kiếm nhị phân; trả về vị trí
+                                    tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( long[] a, int fromIndex, int toIndex, long key )
+                                    - Tìm kiếm giá trị xác định trong phạm vi được chỉ định của mảng long sử dụng thuật toán tìm kiếm
+                                    nhị phân; trả về vị trí tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( Object[] a, Object key )
+                                    - Tìm kiếm giá trị xác định trong mảng đối tượng sử dụng thuật toán tìm kiếm nhị phân; trả về vị
+                                    trí tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( Object[] a, int fromIndex, int toIndex, Object key )
+                                    - Tìm kiếm giá trị xác định trong phạm vi được chỉ định của mảng đối tượng sử dụng thuật toán tìm
+                                    kiếm nhị phân; trả về vị trí tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( short[] a, short key )
+                                    - Tìm kiếm giá trị xác định trong mảng short sử dụng thuật toán tìm kiếm nhị phân; trả về vị trí
+                                    tìm thấy nếu tìm thấy, còn không trả về -1.
+    static int                      binarySearch( short[] a, int fromIndex, int toIndex, short key )
+                                    - Tìm kiếm giá trị xác định trong phạm vi được chỉ định của mảng short sử dụng thuật toán tìm
+                                    kiếm nhị phân; trả về vị trí tìm thấy nếu tìm thấy, còn không trả về -1.
+    static <T> int                  binarySearch( T[] a, T key, Comparator<? super T> c )
+                                    - Tìm kiếm đối tượng xác định trong mảng sử dụng thuật toán tìm kiếm nhị phân; trả về vị trí tìm
+                                    thấy nếu tìm thấy, còn không trả về -1.
+    static <T> int                  binarySearch( T[] a, int fromIndex, int toIndex, T key, Comparator<? super T> c )
+                                    - Tìm kiếm đối tượng xác định trong phạm vi được chỉ định của mảng sử dụng thuật toán tìm kiếm
+                                    nhị phân; trả về vị trí tìm thấy nếu tìm thấy, còn không trả về -1.
+
+
+=====================================================================================================================================
+
+
 Color
 _____________________________________________________________________________________________________________________________________
 java.lang.Object
